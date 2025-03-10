@@ -1,0 +1,112 @@
+p {
+  font-size: 12px;
+}
+
+
+//Colores
+$principal: #004A59;
+$secundario: #027184;
+$naranja-oscuro: #C73618;
+$naranja-claro: #F16744;
+$white: #ffff;
+$gradient: linear-gradient($naranja-claro, $secundario);
+
+//Variables de Bootstrap
+
+
+ //Colores
+$primary: $principal;
+$secondary: $secundario;
+$success: $naranja-oscuro;
+$light: $white;
+$boton-color: #D45A20;
+  //Formularios
+.btn-form {
+  border: none;
+  background-color: $boton-color;
+  border-radius: 15px;
+  border: none;
+  color: $light;
+  padding: 5px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+
+$input-bg: $secondary;
+$input-color: $light;
+$input-border-color: none;
+$form-file-button-bg: $secondary;
+$form-file-button-hover-bg: $primary;
+    //Botones
+$btn-border-radius: 15px; // Cambia el border-radius de todos los botones
+$btn-font-size: 16px; // Cambiar el tamaño de la fuente
+$input-placeholder-color: $light;
+
+  //Fuentes
+$font-family-base: 'Roboto';
+
+
+ html {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+
+   font-family: $font-family-base;
+ }
+
+ //Títulos
+
+ h1 {
+  font-size: 40px;
+ }
+
+ a {
+  font-size: 20px;
+ }
+
+ //Iconos
+ // Cambiar el color de un icono específico
+
+
+.bi{
+  color: $light;
+  font-size: 1.5rem;
+}
+
+.bi-people-fill {
+  color: $light; // Cambia el color a azul
+  font-size: 4rem;
+}
+
+.box-shadow {
+  box-shadow: #CCCC;
+}
+
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-end {
+  align-self: flex-end;
+}
+
+.h-300 {
+  height: 280px;
+}
+
+
+// Modificar el valor de border-radius
+$border-radius: 15px; // Cambia este valor por el que necesites
+
+.bg-gradient {
+  background-color: $gradient;
+}
+
+
+@import "../libs/bootstrap/scss/bootstrap.scss";
+
+// Importa Bootstrap Icons
+@import "../icons/font/bootstrap-icons.css";
+

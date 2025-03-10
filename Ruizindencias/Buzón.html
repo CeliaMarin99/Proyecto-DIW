@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buzón</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    <link rel="stylesheet" href="icons/font/bootstrap-icons.css">
+</head>
+<body>
+   
+       
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">Ruiz-Idencias</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#"><i class="bi bi-chat-dots mx-2"></i>Enviar mensaje</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#"><i class="bi bi-envelope-fill mx-2"></i>Buzón</a>
+              </li>
+              <li class="nav-item dropdown mt-2">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Incidencias
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Modificar</a></li>
+                  <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success text-light" type="submit">Search</button>
+            </form>
+        </div>
+      </nav>
+
+      <div class="container">
+          
+        <div class="row border border-success space-between d-flex">
+          <h1 class="text-success border border-primary mt-2">Buzón</h1>
+          <div class="col-md-7 border border-primary mt-3">
+            <!--Mensajes-->
+            <div class="border overflow-auto" style="height: 450px">
+                    <!--Mensaje 1-->
+                    <div class="card bg-primary">
+                      <div class="card-header d-flex space-between">
+                        <div class="d-flex">
+                            <div style="width: 50px;" class="">
+                              <img src="img/usuario.jpg" alt="" class="img-fluid">
+                            </div>
+                            <p class="mt-3 text-light">De: Nombre de Usuario</p>
+                          </div>  
+
+                        <div class="mt-3">
+                          <p class="text-light">11/02/2025</p>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, est veniam. Maiores, debitis cumque repudiandae labore.</p>
+                        </blockquote>
+                      </div>
+                    </div>
+
+
+                      <!--Mensaje 2-->
+                      <div class="card bg-primary mt-3">
+                        <div class="card-header d-flex space-between">
+                          <div class="d-flex">
+                              <div style="width: 50px;" class="">
+                                <img src="img/usuario.jpg" alt="" class="img-fluid">
+                              </div>
+                              <p class="mt-3 text-light">De: Nombre de Usuario</p>
+                            </div>  
+          
+                          <div class="mt-3">
+                            <p class="text-light">11/02/2025</p>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <blockquote class="blockquote mb-0">
+                            <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, est veniam. Maiores, debitis cumque repudiandae labore.</p>
+                          </blockquote>
+                        </div>
+                      </div>
+
+
+                        <!--Mensaje 3-->
+                        <div class="card bg-primary mt-3">
+                          <div class="card-header d-flex space-between">
+                            <div class="d-flex">
+                                <div style="width: 50px;" class="">
+                                  <img src="img/usuario.jpg" alt="" class="img-fluid">
+                                </div>
+                                <p class="mt-3 text-light">De: Nombre de Usuario</p>
+                              </div>  
+            
+                            <div class="mt-3">
+                              <p class="text-light">11/02/2025</p>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                              <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, est veniam. Maiores, debitis cumque repudiandae labore.</p>
+                            </blockquote>
+                          </div>
+                        </div>
+
+                            <!--Mensaje 4-->
+                            <div class="card bg-primary mt-3">
+                              <div class="card-header d-flex space-between">
+                                <div class="d-flex">
+                                    <div style="width: 50px;" class="">
+                                      <img src="img/usuario.jpg" alt="" class="img-fluid">
+                                    </div>
+                                    <p class="mt-3 text-light">De: Nombre de Usuario</p>
+                                  </div>  
+                
+                                <div class="mt-3">
+                                  <p class="text-light">11/02/2025</p>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                  <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, est veniam. Maiores, debitis cumque repudiandae labore.</p>
+                                </blockquote>
+                              </div>
+                            </div>
+              </div>
+    
+          </div>
+
+          <div class="col-md-3 border border-success rounded h-300 mt-3 flex-end">
+              <h3 class="text-center text-secondary fs-4 mt-4">Usuarios conectados</h3>
+              <div class=" border overflow-auto scrolldiv" style="height: 200px;">
+                      <!--Usuario-->
+                      <div class="d-flex justify-content-center aling-items-center">
+                        <div style="width: 60px;" >
+                          <img src="img/usuario.jpg" alt="" class="img-fluid">
+                        </div>
+                        <a href="" class="mt-3  text-decoration-none">Nombre de Usuario</a>
+                      </div>
+
+                    <!--Usuario-->
+                    <div class="d-flex justify-content-center aling-items-center">
+                      <div style="width: 60px;" >
+                        <img src="img/usuario.jpg" alt="" class="img-fluid">
+                      </div>
+                        <a href="" class="mt-3  text-decoration-none">Nombre de Usuario</a>
+                    </div>
+
+                      <!--Usuario-->
+                    <div class="d-flex justify-content-center aling-items-center">
+                      <div style="width: 60px;" >
+                        <img src="img/usuario.jpg" alt="" class="img-fluid">
+                      </div>
+                      <a href="" class="mt-3  text-decoration-none">Nombre de Usuario</a>
+                  </div>
+
+                  <div class="d-flex justify-content-center aling-items-center">
+                    <div style="width: 60px;" >
+                      <img src="img/usuario.jpg" alt="" class="img-fluid">
+                    </div>
+                    <a href="" class="mt-3  text-decoration-none">Nombre de Usuario</a>
+                  </div>
+              </div>
+                 
+          </div>
+
+      </div>
+
+    <script src="libs/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
