@@ -10,58 +10,87 @@
 </head>
 <body>
    
-       
-    <nav class="navbar navbar-expand-lg bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand text-light" href="#">Ruiz-Idencias</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="#"><i class="bi bi-chat-dots mx-2"></i>Enviar mensaje</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#"><i class="bi bi-envelope-fill mx-2"></i>Buzón</a>
-              </li>
-              <li class="nav-item dropdown mt-2">
-                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Incidencias
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Modificar</a></li>
-                  <li><a class="dropdown-item" href="#">Eliminar</a></li>
-                </ul>
-              </li>
+     <!--BARRA DE NAVEGACIÓN-->
+     <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light hover-claro" href="Inicio.html">Ruiz-Idencias</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown mt-2">
+              <a class="nav-link dropdown-toggle text-light hover-claro" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mensajes
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Mensaje.html">Enviar mensaje</a></li>
+                <li><a class="dropdown-item" href="#">Ver buzón</a></li>
+              </ul>
+            </li>
+
+
+            <li class="nav-item dropdown mt-2">
+              <a class="nav-link dropdown-toggle text-light hover-claro" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Incidencias
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Reportar.html">Reportar</a></li>
+                <li><a class="dropdown-item" href="Modificar.html">Modificar</a></li>
+                <li><a class="dropdown-item" href="#">Eliminar</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown mt-2 d-flex">
              
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-success text-light" type="submit">Search</button>
-            </form>
-        </div>
-      </nav>
+              <a class="nav-link dropdown-toggle text-light hover-claro" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Nombre de Usuario
+              </a>
+              <div style="width: 40px;" class="">
+                <img src="img/usuario.png" alt="" class="img-fluid">
+              </div>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Inicio.html">Cerrar sesión</a></li>
+               
+              </ul>
+            </li>
+
+          </ul>
+
+        
+            
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+            <button class="btn btn-success text-light" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+
+         
+          </div>
+      </div>
+    </nav>
 
       <div class="container">
           
-        <div class="row border border-success space-between d-flex">
-          <h1 class="text-success border border-primary mt-2">Buzón</h1>
-          <div class="col-md-7 border border-primary mt-3">
+        <div class="row space-between d-flex">
+          <h1 class="text-secondary mt-2">Buzón</h1>
+          <div class="title-decoration"></div>
+          <div class="col-md-7 bg-fondo border border-secondary rounded p-4 mt-3">
             <!--Mensajes-->
-            <div class="border overflow-auto" style="height: 450px">
+            <div class="overflow-auto" style="height: 450px">
                     <!--Mensaje 1-->
                     <div class="card bg-primary">
                       <div class="card-header d-flex space-between">
                         <div class="d-flex">
                             <div style="width: 50px;" class="">
-                              <img src="img/usuario.jpg" alt="" class="img-fluid">
+                              <img src="img/usuario.png" alt="" class="img-fluid">
                             </div>
                             <p class="mt-3 text-light">De: Nombre de Usuario</p>
                           </div>  
 
-                        <div class="mt-3">
-                          <p class="text-light">11/02/2025</p>
+                        <div class="d-flex">
+                          <p class="text-light mt-2">11/02/2025</p>
+                          <a href="#Dmensaje" data-bs-toggle="modal"><i class="bi bi-x-square-fill mx-2"></i></a> 
                         </div>
                       </div>
                       <div class="card-body">
@@ -77,14 +106,16 @@
                         <div class="card-header d-flex space-between">
                           <div class="d-flex">
                               <div style="width: 50px;" class="">
-                                <img src="img/usuario.jpg" alt="" class="img-fluid">
+                                <img src="img/usuario.png" alt="" class="img-fluid">
                               </div>
                               <p class="mt-3 text-light">De: Nombre de Usuario</p>
                             </div>  
           
-                          <div class="mt-3">
-                            <p class="text-light">11/02/2025</p>
-                          </div>
+                          
+                        <div class="d-flex">
+                          <p class="text-light mt-2">11/02/2025</p>
+                          <a href="#Dmensaje" data-bs-toggle="modal"><i class="bi bi-x-square-fill mx-2"></i></a> 
+                        </div>
                         </div>
                         <div class="card-body">
                           <blockquote class="blockquote mb-0">
@@ -99,14 +130,15 @@
                           <div class="card-header d-flex space-between">
                             <div class="d-flex">
                                 <div style="width: 50px;" class="">
-                                  <img src="img/usuario.jpg" alt="" class="img-fluid">
+                                  <img src="img/usuario.png" alt="" class="img-fluid">
                                 </div>
                                 <p class="mt-3 text-light">De: Nombre de Usuario</p>
                               </div>  
-            
-                            <div class="mt-3">
-                              <p class="text-light">11/02/2025</p>
-                            </div>
+
+                              <div class="d-flex">
+                                <p class="text-light mt-2">11/02/2025</p>
+                                <a href="#Dmensaje" data-bs-toggle="modal"><i class="bi bi-x-square-fill mx-2"></i></a> 
+                              </div>
                           </div>
                           <div class="card-body">
                             <blockquote class="blockquote mb-0">
@@ -120,14 +152,15 @@
                               <div class="card-header d-flex space-between">
                                 <div class="d-flex">
                                     <div style="width: 50px;" class="">
-                                      <img src="img/usuario.jpg" alt="" class="img-fluid">
+                                      <img src="img/usuario.png" alt="" class="img-fluid">
                                     </div>
                                     <p class="mt-3 text-light">De: Nombre de Usuario</p>
                                   </div>  
                 
-                                <div class="mt-3">
-                                  <p class="text-light">11/02/2025</p>
-                                </div>
+                                  <div class="d-flex">
+                                    <p class="text-light mt-2">11/02/2025</p>
+                                    <a href="#Dmensaje" data-bs-toggle="modal"><i class="bi bi-x-square-fill mx-2"></i></a> 
+                                  </div>
                               </div>
                               <div class="card-body">
                                 <blockquote class="blockquote mb-0">
@@ -139,43 +172,62 @@
     
           </div>
 
-          <div class="col-md-3 border border-success rounded h-300 mt-3 flex-end">
-              <h3 class="text-center text-secondary fs-4 mt-4">Usuarios conectados</h3>
-              <div class=" border overflow-auto scrolldiv" style="height: 200px;">
-                      <!--Usuario-->
-                      <div class="d-flex justify-content-center aling-items-center">
-                        <div style="width: 60px;" >
-                          <img src="img/usuario.jpg" alt="" class="img-fluid">
-                        </div>
-                        <a href="" class="mt-3  text-decoration-none">Nombre de Usuario</a>
+          <div class="col-md-3 bg-primary rounded h-300 mt-3 ">
+            <h3 class="text-center text-light fs-4 mt-4">Usuarios conectados</h3>
+            <div class="overflow-auto scrolldiv" style="height: 200px;">
+                    <!--Usuario-->
+                    <div class="d-flex justify-content-center aling-items-center hover-claro">
+                      <div style="width: 60px;" >
+                        <img src="img/usuario.png" alt="" class="img-fluid">
                       </div>
+                      <a href="" class="mt-3  text-decoration-none text-light fs-6">Nombre de Usuario</a>
+                    </div>
+
+                  <!--Usuario-->
+                  <div class="d-flex justify-content-center aling-items-center hover-claro">
+                    <div style="width: 60px;" >
+                      <img src="img/usuario.png" alt="" class="img-fluid">
+                    </div>
+                      <a href="" class="mt-3  text-decoration-none text-light fs-6">Nombre de Usuario</a>
+                  </div>
 
                     <!--Usuario-->
-                    <div class="d-flex justify-content-center aling-items-center">
-                      <div style="width: 60px;" >
-                        <img src="img/usuario.jpg" alt="" class="img-fluid">
-                      </div>
-                        <a href="" class="mt-3  text-decoration-none">Nombre de Usuario</a>
-                    </div>
-
-                      <!--Usuario-->
-                    <div class="d-flex justify-content-center aling-items-center">
-                      <div style="width: 60px;" >
-                        <img src="img/usuario.jpg" alt="" class="img-fluid">
-                      </div>
-                      <a href="" class="mt-3  text-decoration-none">Nombre de Usuario</a>
-                  </div>
-
-                  <div class="d-flex justify-content-center aling-items-center">
+                  <div class="d-flex justify-content-center aling-items-center hover-claro">
                     <div style="width: 60px;" >
-                      <img src="img/usuario.jpg" alt="" class="img-fluid">
+                      <img src="img/usuario.png" alt="" class="img-fluid">
                     </div>
-                    <a href="" class="mt-3  text-decoration-none">Nombre de Usuario</a>
-                  </div>
-              </div>
-                 
-          </div>
+                    <a href="" class="mt-3  text-decoration-none text-light fs-6">Nombre de Usuario</a>
+                 </div>
 
+                <div class="d-flex justify-content-center aling-items-center hover-claro">
+                  <div style="width: 60px;" >
+                    <img src="img/usuario.png" alt="" class="img-fluid">
+                  </div>
+                  <a href="" class="mt-3  text-decoration-none text-light fs-6">Nombre de Usuario</a>
+                </div>
+            </div>
+               
+        </div>
+
+      </div>
+
+      <!--MODAL-->
+      <div class="modal fade" id="Dmensaje" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">¡Advertencia!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ¿Está seguro que de desea eliminar este mensaje? Si lo hace se perderá para siempre.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Borrar</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+          </div>
+        </div>
       </div>
 
     <script src="libs/bootstrap/dist/js/bootstrap.bundle.js"></script>

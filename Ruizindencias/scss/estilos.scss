@@ -1,6 +1,9 @@
+@use 'sass:color';
+
 p {
   font-size: 12px;
 }
+
 
 
 //Colores
@@ -9,7 +12,19 @@ $secundario: #027184;
 $naranja-oscuro: #C73618;
 $naranja-claro: #F16744;
 $white: #ffff;
+$fondo: #CFDEE6 ;
+$moderado: #ec9531;
 $gradient: linear-gradient($naranja-claro, $secundario);
+
+.bg-fondo {
+  background-color: $fondo;
+}
+
+.title-decoration {
+   background-color: $secundario;
+   height: 5px;
+}
+
 
 //Variables de Bootstrap
 
@@ -20,18 +35,30 @@ $secondary: $secundario;
 $success: $naranja-oscuro;
 $light: $white;
 $boton-color: #D45A20;
+$warning: $moderado;
+
+//Barra de scroll
+
+* {
+  scrollbar-color: $light, $secondary; /* thumb: #888, track: #f1f1f1 */
+  scrollbar-width: thin; /* Otros valores: auto, none */
+}
   //Formularios
-.btn-form {
-  border: none;
-  background-color: $boton-color;
-  border-radius: 15px;
-  border: none;
-  color: $light;
-  padding: 5px;
-  padding-right: 40px;
-  padding-left: 40px;
+
+
+.hover-claro {
+  background-color: $primary;
+  &:hover {
+    background-color: $secondary;
+  }
 }
 
+.hover-oscuro {
+  background-color: $light;
+  &:hover {
+     background-color: $primary;
+  }
+}
 
 $input-bg: $secondary;
 $input-color: $light;
@@ -79,8 +106,16 @@ $font-family-base: 'Roboto';
   font-size: 4rem;
 }
 
+.bi-search {
+  font-size: 1rem;
+}
+
 .box-shadow {
-  box-shadow: #CCCC;
+  box-shadow: 6px 6px 10px 0px $primary;
+}
+
+.box-black {
+  box-shadow: 6px 6px 10px 0px #2c2c2e;
 }
 
 
@@ -103,6 +138,8 @@ $border-radius: 15px; // Cambia este valor por el que necesites
 .bg-gradient {
   background-color: $gradient;
 }
+
+//Barra de scroll
 
 
 @import "../libs/bootstrap/scss/bootstrap.scss";
